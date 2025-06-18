@@ -18,6 +18,7 @@ export const route = createBrowserRouter([
             {path: ":postId", element: <PostDetails />, loader: PostDetailsLoader, hydrateFallbackElement: <h2>Loading...</h2>},
          ]
         },
+        {path:"new", element: <PostAdd />, action: postAddAction}
      ]
     },
 ])
